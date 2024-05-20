@@ -63,6 +63,7 @@ int main() {
     dokter*varpasien1 = new pasien("Andi");
     dokter*varpasien2 = new pasien("Lia");
 
+
     vardokter1->tambahpasien(varpasien1);
     vardokter1->tambahpasien(varpasien2);
     vardokter2->tambahpasien(varpasien1);
@@ -70,7 +71,7 @@ int main() {
     vardokter1->cetakpasien();
     vardokter1->cetakpasien();
     vardokter2->cetakpasien();
-    
+
     return 0;
 }
 
