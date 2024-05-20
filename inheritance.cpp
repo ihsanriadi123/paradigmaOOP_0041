@@ -18,3 +18,20 @@ public:
     }
 };
 
+class pelajar : public orang {
+public:
+	string sekolah;
+
+	pelajar(string pnama, string psekolah) :
+		orang(pnama),
+		sekolah(psekolah) {
+		cout << "pelajar dibuat\n" << endl;
+	}
+	~pelajar() {
+		cout << "pelajar dihapus\n" << endl;
+	}
+	string perkenalan() {
+		return "hallo, nama saya " + nama + "dari sekolah " + sekolah + "\n\n";
+	}
+};
+
