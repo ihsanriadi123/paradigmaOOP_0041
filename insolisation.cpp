@@ -21,9 +21,9 @@ public:
     }
 };
 
-
 int main () {
     mahasiswa mhd(12, "Asroni", 90.5);
 
     return 0;
 }
+
