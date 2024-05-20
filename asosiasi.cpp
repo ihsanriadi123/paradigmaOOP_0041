@@ -35,7 +35,6 @@ public:
     void cetakpasien();
 };
 
-
 void pasien::tambah_dokter(dokter* pdokter) {
     daftar_dokter.push_back(pdokter);
 }
@@ -45,5 +44,33 @@ void pasien::cetakdokter() {
         cout << a->nama << "\n";
     }
     cout << endl;
+}
+void dokter::tambahpasien(pasien* pPasien) {
+    daftar_pasien.push_back(pPasien);
+    pPasien->tambahdokter(this);
+}
+void dokter::cetakdokter() {
+    cout << "daftar pasien dari dokter \"" << this->nama << "\":\n";
+    for (auto& a : daftar_pasien) {
+        cout << a->nama << "\n";
+    }
+    cout << endl;
+}
+
+int main() {
+    dokter*vardokter1 = new dokter("dr.budi");
+    dokter*vardokter2 = new dokter("dr.tono");
+    dokter*varpasien1 = new pasien("Andi");
+    dokter*varpasien2 = new pasien("Lia");
+
+    vardokter1->tambahpasien(varpasien1);
+    vardokter1->tambahpasien(varpasien2);
+    vardokter2->tambahpasien(varpasien1);
+
+    vardokter1->cetakpasien();
+    vardokter1->cetakpasien();
+    vardokter2->cetakpasien();
+    
+    return 0;
 }
 
