@@ -5,7 +5,7 @@ using namespace std;
 class manusia_{
 public:
     string nama;
-    jantung varjantung;
+    Jantung varjantung;
 
     manusia_(string pname){
         :nama(pname) {
@@ -15,5 +15,6 @@ public:
         ~manusia_(){
             cout << nama << "mati\n";
         }
+    }
 };
 #endif

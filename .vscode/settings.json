@@ -61,5 +61,6 @@
     "*.py": "python",
     "format": "cpp",
     "xstring": "cpp"
-  }
+  },
+  "C_Cpp.errorSquiggles": "disabled"
 }

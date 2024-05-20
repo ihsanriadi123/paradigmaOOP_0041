@@ -13,10 +13,10 @@ int main() {
     anak* varanak2 = new anak("rini");
     anak* varanak3 = new anak("dewi");
 
-    varIbu->tambahAnak(varanak1);
+    varIbu->tambahAnak(varanak);
     varIbu->tambahAnak(varanak2);
     varIbu->tambahAnak(varanak3);
-    varibu2->tambahAnak(varanak1);
+    varibu2->tambahAnak(varanak);
 
     varIbu->cetakAnak();
     varibu2->cetakAnak();
